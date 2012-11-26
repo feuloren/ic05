@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://www.w3resource.com/twitter-bootstrap/navbar-example.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="utf-8"> 
+<title>Project Cartographie Example</title>
+<meta name="description" content="Twitter Bootstrap navbar Example. This example includes rendering of Social buttons.">
+    
+    
+    
+    <!-- Le styles -->
+<link href="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
+<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="nav-css.css" type="text/css" rel="stylesheet">    
+    
+
+    <style>
+        
+        /* GLOBAL STYLES
+         -------------------------------------------------- */
+        /* Padding below the footer and lighter body text */
+        
+        body {
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+        
+        p {
+            margin-left:40px;
+        }
+        
+        
+        /* Special class on .container surrounding .navbar, used for positioning it into place. */
+        .navbar-wrapper {
+            position: relative;
+            z-index: 10;
+            margin-top: 20px;
+            margin-bottom: 0px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+        }
+        
+        /* Remove border and change up box shadow for more contrast */
+        .navbar .navbar-inner {
+            border: 0;
+            -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+            -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+            box-shadow: 0 2px 10px rgba(0,0,0,.25);
+        }
+        
+        /* Downsize the brand/project name a bit */
+        .navbar .brand {
+            padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+        }
+        
+        /* Navbar links: increase padding for taller navbar */
+        .navbar .nav > li > a {
+            padding: 15px 20px;
+        }
+        
+        /* Offset the responsive button for proper vertical alignment */
+        .navbar .btn-navbar {
+            margin-top: 10px;
+        }
+        
+        
+        
+        /* MARKETING CONTENT
+         -------------------------------------------------- */
+        
+        /* Center align the text within the three columns below the carousel */
+        .marketing .span4 {
+            text-align: center;
+        }
+        .marketing h2 {
+            font-weight: normal;
+        }
+        .marketing .span4 p {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        
+        
+        
+        
+        /* RESPONSIVE CSS
+         -------------------------------------------------- */
+        
+        @media (max-width: 979px) {
+            
+            .container.navbar-wrapper {
+                margin-bottom: 0;
+                width: auto;
+            }
+            .navbar-inner {
+                border-radius: 0;
+                margin: -20px 0;
+            }
+            
+            .carousel .item {
+                height: 500px;
+            }
+            .carousel img {
+                width: auto;
+                height: 500px;
+            }
+            
+            .featurette {
+                height: auto;
+                padding: 0;
+            }
+            .featurette-image.pull-left,
+            .featurette-image.pull-right {
+                display: block;
+                float: none;
+                max-width: 40%;
+                margin: 0 auto 20px;
+            }
+        }
+        
+        
+        @media (max-width: 767px) {
+            
+            .navbar-inner {
+                margin: -20px;
+            }
+            
+            .carousel {
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+            .carousel .container {
+                
+            }
+            .carousel .item {
+                height: 300px;
+
+            }
+            .carousel img {
+                height: 300px;
+            }
+            .carousel-caption {
+                width: 65%;
+                padding: 0px 70px;
+                margin-bottom: 80px;
+            }
+            .carousel-caption h1 {
+                font-size: 30px;
+            }
+            .carousel-caption .lead,
+            .carousel-caption .btn {
+                font-size: 10px;
+            }
+            
+            .marketing .span4 + .span4 {
+                margin-top: 40px;
+            }
+            
+            .featurette-heading {
+                font-size: 30px;
+            }
+            .featurette .lead {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+            
+        }
+        </style>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+    
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+                <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+                    <style type="text/css"></style></head>
+
+    
+    
+    <!-- NAVBAR
+     ================================================== -->
+    
+</head>
+<body data-twttr-rendered="true">
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe id="fb_xdm_frame_http" name="fb_xdm_frame_http" src="./Twitter Bootstrap navbar Example_files/xd_arbiter.html"></iframe><iframe id="fb_xdm_frame_https" name="fb_xdm_frame_https" src="./Twitter Bootstrap navbar Example_files/xd_arbiter(1).html"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script src="./Twitter Bootstrap navbar Example_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Twitter Bootstrap navbar Example_files/plusone.js" gapi_processed="true"></script><script id="twitter-wjs" src="./Twitter Bootstrap navbar Example_files/widgets.js"></script><script id="facebook-jssdk" src="./Twitter Bootstrap navbar Example_files/all.js"></script><script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+    
+    <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+    <div class="container navbar-wrapper">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                
+               
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+	<ul class="nav">
+        <!-- LE LOGO -->
+  <li><a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#"><img src="images/logo.jpg" height="20" width="20" ></a></li>
+  <li class="active">
+    <a class="brand" href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#">Project Name</a>
+  </li>
+  <li><a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#">About</a></li>
+  <li><a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#">Graph</a></li>
+  <li><a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#">Form</a></li>
+  <li><a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#">Contact</a></li>
+</ul>
+<ul class="nav">
+  <li class="dropdown">
+    <a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#" class="dropdown-toggle" data-toggle="dropdown">
+          Services
+          <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+     <li><a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#">Download graph</a></li>
+  <li><a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#">Download information</a></li>
+  <li><a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#">Other service</a></li>
+    </ul>
+  </li>
+</ul>
+<form class="navbar-search pull-left">
+  <input type="text" class="search-query" placeholder="Search">
+</form>
+<ul class="nav pull-right">
+  <li class="dropdown">
+    <a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#" class="dropdown-toggle" data-toggle="dropdown">
+          Social
+          <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+     <li class="socials"><!-- Place this tag where you want the +1 button to render -->
+<div style="height: 24px; width: 150px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; background-position: initial initial; background-repeat: initial initial;" id="___plusone_0"><iframe allowtransparency="true" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 150px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1353921628500" name="I0_1353921628500" src="./Twitter Bootstrap navbar Example_files/fastbutton.html" title="+1"></iframe></div>
+</li>
+  <li class="socials"><div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-send="false" data-width="150" data-show-faces="true" fb-xfbml-state="rendered"><span style="height: 24px; width: 225px;"><iframe id="f86b3b5" name="f33864c9ac" scrolling="no" style="border: none; overflow: hidden; height: 24px; width: 225px;" title="Like this content on Facebook." class="fb_ltr" src="./Twitter Bootstrap navbar Example_files/like.html"></iframe></span></div></li>
+  <li class="socials"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="./Twitter Bootstrap navbar Example_files/tweet_button.1352365724.html" class="twitter-share-button twitter-count-horizontal" style="width: 107px; height: 20px;" title="Twitter Tweet Button" data-twttr-rendered="true"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+    </ul>
+  </li>
+</ul>
+    </div>
+  </div>
+</div>
+
+                
+</div>
+</div>
+</div>
+    
+<script src="./Twitter Bootstrap navbar Example_files/jquery.js"></script>
+<script src="./Twitter Bootstrap navbar Example_files/bootstrap-dropdown.js"></script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+    
+    
+    
+    <!-- Carousel
+     ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="./Carousel Template · Bootstrap_files/slide-01.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Example 1.</h1>
+                            
+                                <p class="lead" >
+                                <small>information about the graph.</p>
+                                </small>
+                                    
+                                <a class="btn btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Join us today</a>
+                        </div>
+                    </div>
+                    </div>
+            <div class="item">
+                <img src="./Carousel Template · Bootstrap_files/slide-02.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Example 2.</h1>
+                            <p class="lead">
+                            <small>information about the graph.
+                            </small>
+                            </p>
+                            <a class="btn btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Learn more</a>
+                        </div>
+                    </div>
+                    </div>
+            <div class="item">
+                <img src="./Carousel Template · Bootstrap_files/slide-03.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Example 3.</h1>
+                            <p class="lead">
+                            <small>information about the graph.
+                            </small>
+                            </p>
+                            <a class="btn btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Explore</a>
+                        </div>
+                    </div>
+                    </div>
+        </div>
+        <a class="left carousel-control" href="http://twitter.github.com/bootstrap/examples/carousel.html#myCarousel" data-slide="prev">‹</a>
+        <a class="right carousel-control" href="http://twitter.github.com/bootstrap/examples/carousel.html#myCarousel" data-slide="next">›</a>
+    </div><!-- /.carousel -->
+    
+    
+    
+    <!-- Marketing messaging and featurettes
+     ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    
+    <div class="container marketing">
+        
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="span4">
+                <h2>Vous avez dit Cartographies ?</h2>
+                    <p>Des outils pour apprendre à lire une carto !</p>
+                    <p><a class="btn btn-success" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Learn more»</a></p>
+                    </div><!-- /.span4 -->
+            <div class="span4">
+                <h2>Voir les Cartos DD de l'UTC</h2>
+                    <p>Les visualiser, faire des recherches, des requêtes ...</p>
+                    <p><a class="btn btn-success" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Explore »</a></p>
+                    </div><!-- /.span4 -->
+            <div class="span4">
+                <h2>On vous a oublié?</h2>
+                    <p>Contribuer aux Cartographies en remplissant le formulaire !</p>
+                    <p><a class="btn btn-success" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Join us today »</a></p>
+                    </div><!-- /.span4 -->
+        </div><!-- /.row -->
+        
+        
+               
+        
+        <!-- FOOTER -->
+        <br><br>
+        
+        <hr>
+        
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>© 2012 Company, Inc. ·
+            
+                <a href="http://twitter.github.com/bootstrap/examples/carousel.html#">Privacy</a>
+            
+                ·
+            
+                <a href="http://twitter.github.com/bootstrap/examples/carousel.html#">Terms</a>
+            </p>
+        </footer>
+        
+    </div><!-- /.container -->
+    
+    
+    
+    <!-- Le javascript
+     ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Carousel Template · Bootstrap_files/jquery.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-transition.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-alert.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-modal.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-dropdown.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-scrollspy.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-tab.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-tooltip.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-popover.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-button.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-collapse.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-carousel.js"></script>
+    <script src="./Carousel Template · Bootstrap_files/bootstrap-typeahead.js"></script>
+    <script>
+        !function ($) {
+            $(function(){
+              // carousel demo
+              $('#myCarousel').carousel()
+              })
+        }(window.jQuery)
+        </script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ </body></html>
