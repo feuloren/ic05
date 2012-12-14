@@ -1,0 +1,1103 @@
+2012-11-28 11:19:05 Error: [MissingControllerException] Controller class PostsController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-28 11:19:17 Error: [MissingViewException] View file "/home/florent/Projets/ic05/app/View/Actors/index.ctp" is missing.
+#0 /home/florent/Projets/ic05/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-11-28 11:24:10 Error: [MissingControllerException] Controller class PostsController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-28 11:25:23 Error: [MissingControllerException] Controller class PostsController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-28 11:25:28 Error: [MissingControllerException] Controller class PostsController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-28 11:25:31 Error: [MissingActionException] Action ActorsController::view() could not be found.
+#0 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-01 13:01:11 Error: Fatal Error (4): syntax error, unexpected ',' in [/home/florent/Projets/ic05/app/Controller/ActorsController.php, line 10]
+2012-12-01 13:01:11 Error: [FatalErrorException] syntax error, unexpected ','
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 10, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 10, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-01 20:23:48 Error: Fatal Error (4): syntax error, unexpected '$hasMany' (T_VARIABLE), expecting function (T_FUNCTION) in [/home/florent/Projets/ic05/app/Model/Actor.php, line 3]
+2012-12-01 20:23:48 Error: [FatalErrorException] syntax error, unexpected '$hasMany' (T_VARIABLE), expecting function (T_FUNCTION)
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 3, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 3, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-01 20:24:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Keyword.actor_id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Keyword...', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Keyword...', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Keyword...', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Actor), 'SELECT `Keyword...', Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Actor), Object(AppModel), 'hasMany', 'Keyword', Array, Array, true, Array, 0, Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1516): Model->find('first', Array)
+#8 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(170): Model->read()
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(391): Scaffold->_scaffoldView(Object(CakeRequest))
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#14 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#15 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2012-12-04 17:00:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Keyword.actor_id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Keyword...', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Keyword...', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Keyword...', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Actor), 'SELECT `Keyword...', Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Actor), Object(AppModel), 'hasMany', 'Keyword', Array, Array, true, Array, 0, Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#7 /home/florent/Projets/ic05/app/Controller/ActorsController.php(7): Model->find('all')
+#8 [internal function]: ActorsController->index()
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(ActorsController), Array)
+#10 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-04 17:01:28 Error: [MissingActionException] Action ActorsController::indexx() could not be found.
+#0 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-04 17:01:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Keyword.actor_id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Keyword...', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Keyword...', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Keyword...', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Actor), 'SELECT `Keyword...', Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Actor), Object(AppModel), 'hasMany', 'Keyword', Array, Array, true, Array, 0, Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#7 /home/florent/Projets/ic05/app/Controller/ActorsController.php(7): Model->find('all')
+#8 [internal function]: ActorsController->index()
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(ActorsController), Array)
+#10 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-04 17:01:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Keyword.actor_id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Keyword...', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Keyword...', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Keyword...', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Actor), 'SELECT `Keyword...', Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Actor), Object(AppModel), 'hasMany', 'Keyword', Array, Array, true, Array, 0, Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#7 /home/florent/Projets/ic05/app/Controller/ActorsController.php(11): Model->find()
+#8 [internal function]: ActorsController->view('Florent Th??ven...')
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(ActorsController), Array)
+#10 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-04 17:01:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Keyword.actor_id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Keyword...', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Keyword...', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Keyword...', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Actor), 'SELECT `Keyword...', Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Actor), Object(AppModel), 'hasMany', 'Keyword', Array, Array, true, Array, 0, Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#7 /home/florent/Projets/ic05/app/Controller/ActorsController.php(11): Model->find()
+#8 [internal function]: ActorsController->view('1')
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(ActorsController), Array)
+#10 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-04 17:03:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Keyword.actor_id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Keyword...', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Keyword...', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Keyword...', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Actor), 'SELECT `Keyword...', Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Actor), Object(AppModel), 'hasMany', 'Keyword', Array, Array, true, Array, 0, Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1516): Model->find('first', Array)
+#8 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(170): Model->read()
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(391): Scaffold->_scaffoldView(Object(CakeRequest))
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#14 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#15 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2012-12-04 17:05:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Actor.id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Actor`....', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Actor`....', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Actor`....', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(190): Controller->paginate()
+#8 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(388): Scaffold->_scaffoldIndex(Object(CakeRequest))
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-04 17:06:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Actor.id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Actor`....', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Actor`....', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Actor`....', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(190): Controller->paginate()
+#8 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(388): Scaffold->_scaffoldIndex(Object(CakeRequest))
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-04 17:06:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Actor.id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Actor`....', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Actor`....', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Actor`....', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(190): Controller->paginate()
+#8 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(388): Scaffold->_scaffoldIndex(Object(CakeRequest))
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-04 17:06:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Actor.id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Actor`....', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Actor`....', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Actor`....', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(190): Controller->paginate()
+#8 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(388): Scaffold->_scaffoldIndex(Object(CakeRequest))
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-04 17:06:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Actor.id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Actor`....', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Actor`....', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Actor`....', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(190): Controller->paginate()
+#8 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(388): Scaffold->_scaffoldIndex(Object(CakeRequest))
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-04 17:06:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Actor.id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Actor`....', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Actor`....', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Actor`....', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(190): Controller->paginate()
+#8 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(388): Scaffold->_scaffoldIndex(Object(CakeRequest))
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-04 17:26:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Actor.id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Actor`....', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Actor`....', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Actor`....', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(190): Controller->paginate()
+#8 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(388): Scaffold->_scaffoldIndex(Object(CakeRequest))
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-04 17:28:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Keyword.actor_id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Keyword...', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Keyword...', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Keyword...', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Actor), 'SELECT `Keyword...', Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Actor), Object(AppModel), 'hasMany', 'Keyword', Array, Array, true, Array, 0, Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1516): Model->find('first', Array)
+#8 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(170): Model->read()
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(391): Scaffold->_scaffoldView(Object(CakeRequest))
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#14 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#15 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2012-12-04 17:41:28 Error: [MissingTableException] Table actors_keywords for model ActorsKeyword was not found in datasource default.
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(3179): Model->setSource('actors_keywords')
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(847): Model->schema()
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(872): Model->__isset('ActorsKeyword')
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(3247): Model->__get('ActorsKeyword')
+#5 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1596): Model->joinModel('ActorsKeyword', Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1071): DboSource->generateAssociationQuery(Object(Actor), Object(Keyword), 'hasAndBelongsTo...', 'Keyword', Array, Array, false, NULL)
+#7 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Actor), Array)
+#8 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1516): Model->find('first', Array)
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(170): Model->read()
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(391): Scaffold->_scaffoldView(Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#14 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#15 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#16 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2012-12-04 17:47:50 Error: Fatal Error (64): Cannot redeclare class Keyword in [/home/florent/Projets/ic05/app/Model/Project.php, line 4]
+2012-12-04 17:47:50 Error: [FatalErrorException] Cannot redeclare class Keyword
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/home/florent/P...', 4)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/home/florent/P...', 4, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/home/florent/P...', 4, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-04 17:48:04 Error: [MissingControllerException] Controller class ProjectsController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-04 17:51:19 Error: [MissingTableException] Table keywords_projects for model KeywordsProject was not found in datasource default.
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(3179): Model->setSource('keywords_projec...')
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(847): Model->schema()
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(872): Model->__isset('KeywordsProject')
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(3247): Model->__get('KeywordsProject')
+#5 /home/florent/Projets/ic05/lib/Cake/Model/ModelValidator.php(436): Model->joinModel('KeywordsProject')
+#6 /home/florent/Projets/ic05/lib/Cake/Model/ModelValidator.php(101): ModelValidator->_validateWithModels(Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(3009): ModelValidator->validates(Array)
+#8 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1643): Model->validates(Array)
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(243): Model->save(Array)
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(395): Scaffold->_scaffoldSave(Object(CakeRequest), 'add')
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(KeywordsController), Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#14 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#15 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(KeywordsController), Object(CakeRequest), Object(CakeResponse))
+#16 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2012-12-04 17:51:48 Error: [MissingTableException] Table keywords_projects for model KeywordsProject was not found in datasource default.
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(3179): Model->setSource('keywords_projec...')
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(847): Model->schema()
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(872): Model->__isset('KeywordsProject')
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(3247): Model->__get('KeywordsProject')
+#5 /home/florent/Projets/ic05/lib/Cake/Model/ModelValidator.php(436): Model->joinModel('KeywordsProject')
+#6 /home/florent/Projets/ic05/lib/Cake/Model/ModelValidator.php(101): ModelValidator->_validateWithModels(Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(3009): ModelValidator->validates(Array)
+#8 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1643): Model->validates(Array)
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(243): Model->save(Array)
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(395): Scaffold->_scaffoldSave(Object(CakeRequest), 'add')
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(KeywordsController), Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#14 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#15 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(KeywordsController), Object(CakeRequest), Object(CakeResponse))
+#16 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2012-12-04 17:52:23 Error: [MissingTableException] Table keywords_projects for model KeywordsProject was not found in datasource default.
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(3179): Model->setSource('keywords_projec...')
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(847): Model->schema()
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(872): Model->__isset('KeywordsProject')
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(3247): Model->__get('KeywordsProject')
+#5 /home/florent/Projets/ic05/lib/Cake/Model/ModelValidator.php(436): Model->joinModel('KeywordsProject')
+#6 /home/florent/Projets/ic05/lib/Cake/Model/ModelValidator.php(101): ModelValidator->_validateWithModels(Array)
+#7 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(3009): ModelValidator->validates(Array)
+#8 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1643): Model->validates(Array)
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(243): Model->save(Array)
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(395): Scaffold->_scaffoldSave(Object(CakeRequest), 'add')
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ProjectsController), Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#14 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#15 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ProjectsController), Object(CakeRequest), Object(CakeResponse))
+#16 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2012-12-04 17:52:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'KeywordsProject.keyword_id' in 'field list'
+#0 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Keyword...', Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Keyword...', Array, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Keyword...', false)
+#4 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(2630): DboSource->read(Object(AppModel), Array)
+#5 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1846): Model->find('all', Array)
+#6 /home/florent/Projets/ic05/lib/Cake/Model/Model.php(1743): Model->_saveMulti(Array, '1', Object(Mysql))
+#7 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(243): Model->save(Array)
+#8 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(395): Scaffold->_scaffoldSave(Object(CakeRequest), 'add')
+#9 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#10 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ProjectsController), Object(CakeRequest))
+#11 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#12 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ProjectsController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-04 18:01:26 Error: [MissingControllerException] Controller class RenderingsController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-04 18:03:26 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-04 18:17:52 Error: [MissingViewException] View file "/home/florent/Projets/ic05/app/View/Users/login.ctp" is missing.
+#0 /home/florent/Projets/ic05/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-05 10:28:04 Error: Fatal Error (1): Call to a member function flash() on a non-object in [/home/florent/Projets/ic05/app/View/Users/login.ctp, line 2]
+2012-12-05 10:28:04 Error: [FatalErrorException] Call to a member function flash() on a non-object
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/florent/P...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/florent/P...', 2, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/florent/P...', 2, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-05 10:28:59 Error: Fatal Error (1): Call to a member function flash() on a non-object in [/home/florent/Projets/ic05/app/View/Users/login.ctp, line 2]
+2012-12-05 10:28:59 Error: [FatalErrorException] Call to a member function flash() on a non-object
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/florent/P...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/florent/P...', 2, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/florent/P...', 2, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-05 10:29:00 Error: Fatal Error (1): Call to a member function flash() on a non-object in [/home/florent/Projets/ic05/app/View/Users/login.ctp, line 2]
+2012-12-05 10:29:00 Error: [FatalErrorException] Call to a member function flash() on a non-object
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/florent/P...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/florent/P...', 2, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/florent/P...', 2, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-05 10:29:05 Error: Fatal Error (1): Call to a member function flash() on a non-object in [/home/florent/Projets/ic05/app/View/Users/login.ctp, line 2]
+2012-12-05 10:29:05 Error: [FatalErrorException] Call to a member function flash() on a non-object
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/florent/P...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/florent/P...', 2, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/florent/P...', 2, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-05 10:29:51 Error: Fatal Error (1): Cannot access empty property in [/home/florent/Projets/ic05/lib/Cake/View/View.php, line 832]
+2012-12-05 10:29:51 Error: [FatalErrorException] Cannot access empty property
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/home/florent/P...', 832)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/home/florent/P...', 832, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/home/florent/P...', 832, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-05 10:29:52 Error: Fatal Error (1): Cannot access empty property in [/home/florent/Projets/ic05/lib/Cake/View/View.php, line 832]
+2012-12-05 10:29:52 Error: [FatalErrorException] Cannot access empty property
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/home/florent/P...', 832)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/home/florent/P...', 832, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/home/florent/P...', 832, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-05 10:30:08 Error: Fatal Error (1): Cannot access empty property in [/home/florent/Projets/ic05/lib/Cake/View/View.php, line 832]
+2012-12-05 10:30:08 Error: [FatalErrorException] Cannot access empty property
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/home/florent/P...', 832)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/home/florent/P...', 832, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/home/florent/P...', 832, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-05 10:30:29 Error: Fatal Error (1): Cannot access empty property in [/home/florent/Projets/ic05/lib/Cake/View/View.php, line 832]
+2012-12-05 10:30:29 Error: [FatalErrorException] Cannot access empty property
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/home/florent/P...', 832)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/home/florent/P...', 832, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/home/florent/P...', 832, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-05 10:34:48 Error: Fatal Error (4): syntax error, unexpected '{' in [/home/florent/Projets/ic05/app/Controller/UsersController.php, line 9]
+2012-12-05 10:34:48 Error: [FatalErrorException] syntax error, unexpected '{'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 9, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 9, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-09 18:41:27 Error: [MissingControllerException] Controller class CarouselTemplate·BootstrapFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-09 18:41:27 Error: [MissingControllerException] Controller class CarouselTemplate·BootstrapFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-09 18:41:27 Error: [MissingControllerException] Controller class CarouselTemplate·BootstrapFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 16:39:47 Error: Fatal Error (4): syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [/home/florent/Projets/ic05/app/View/Pages/home.ctp, line 6]
+2012-12-11 16:39:47 Error: [FatalErrorException] syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 6, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 6, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 16:49:19 Error: Fatal Error (4): syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [/home/florent/Projets/ic05/app/View/Pages/home.ctp, line 6]
+2012-12-11 16:49:19 Error: [FatalErrorException] syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 6, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 6, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 17:08:53 Error: Fatal Error (1): Class 'AppControler' not found in [/home/florent/Projets/ic05/app/Controller/HomeController.php, line 3]
+2012-12-11 17:08:53 Error: [FatalErrorException] Class 'AppControler' not found
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'AppContr...', '/home/florent/P...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppContr...', '/home/florent/P...', 3, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'AppContr...', '/home/florent/P...', 3, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 17:09:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [/home/florent/Projets/ic05/app/Controller/HomeController.php, line 6]
+2012-12-11 17:09:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/florent/P...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/florent/P...', 6, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/florent/P...', 6, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 17:12:25 Error: Fatal Error (1): Call to a member function find() on a non-object in [/home/florent/Projets/ic05/app/Controller/HomeController.php, line 7]
+2012-12-11 17:12:25 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/florent/P...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/florent/P...', 7, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/florent/P...', 7, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 17:21:15 Error: [MissingActionException] Action Images::logo.jpg() could not be found.
+#0 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ImagesController), Object(CakeRequest))
+#2 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-12-11 17:25:58 Error: [MissingActionException] Action Images::logo.jpg() could not be found.
+#0 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ImagesController), Object(CakeRequest))
+#2 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-12-11 17:26:17 Error: [MissingActionException] Action Images::logo.jpg() could not be found.
+#0 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ImagesController), Object(CakeRequest))
+#2 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:50 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:51 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:52 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:53 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:54 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:30:55 Error: [MissingControllerException] Controller class TwitterBootstrapNavbarExampleFilesController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:44:05 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 67]
+2012-12-11 17:44:05 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 67, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 67, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 17:44:19 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 67]
+2012-12-11 17:44:19 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 67, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 67, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 17:44:20 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 67]
+2012-12-11 17:44:20 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 67, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 67, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 17:44:35 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 67]
+2012-12-11 17:44:35 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 67, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 67, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 17:44:36 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 67]
+2012-12-11 17:44:36 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 67, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 67, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 17:52:17 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-11 17:53:42 Error: [NotFoundException] Invalid Actor
+#0 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(391): Scaffold->_scaffoldView(Object(CakeRequest))
+#1 /home/florent/Projets/ic05/lib/Cake/Controller/Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#2 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(530): Scaffold->__construct(Object(ActorsController), Object(CakeRequest))
+#3 /home/florent/Projets/ic05/lib/Cake/Controller/Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#4 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 /home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ActorsController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2012-12-11 18:00:19 Error: Fatal Error (4): syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 28]
+2012-12-11 18:00:19 Error: [FatalErrorException] syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 18:00:20 Error: Fatal Error (4): syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 28]
+2012-12-11 18:00:20 Error: [FatalErrorException] syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 18:00:25 Error: Fatal Error (4): syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 28]
+2012-12-11 18:00:25 Error: [FatalErrorException] syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 18:00:28 Error: Fatal Error (4): syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 28]
+2012-12-11 18:00:28 Error: [FatalErrorException] syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 18:00:28 Error: Fatal Error (4): syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 28]
+2012-12-11 18:00:28 Error: [FatalErrorException] syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 18:00:29 Error: Fatal Error (4): syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 28]
+2012-12-11 18:00:29 Error: [FatalErrorException] syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 18:00:29 Error: Fatal Error (4): syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 28]
+2012-12-11 18:00:29 Error: [FatalErrorException] syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 18:00:29 Error: Fatal Error (4): syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 28]
+2012-12-11 18:00:29 Error: [FatalErrorException] syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 18:00:29 Error: Fatal Error (4): syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 28]
+2012-12-11 18:00:29 Error: [FatalErrorException] syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 18:00:29 Error: Fatal Error (4): syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 28]
+2012-12-11 18:00:29 Error: [FatalErrorException] syntax error, unexpected '">Project Name</a>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 28, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-11 18:01:56 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/florent/Projets/ic05/app/View/Layouts/default.ctp, line 29]
+2012-12-11 18:01:56 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/florent/P...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/florent/P...', 29, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/florent/P...', 29, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-12 12:41:54 Error: [MissingControllerException] Controller class DownloadsController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-12 12:42:05 Error: Fatal Error (1): Call to a member function send() on a non-object in [/home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php, line 168]
+2012-12-12 12:42:05 Error: [FatalErrorException] Call to a member function send() on a non-object
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/florent/P...', 168)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/florent/P...', 168, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/florent/P...', 168, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-12 12:42:15 Error: [MissingControllerException] Controller class ProjectController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-12 15:27:35 Error: Fatal Error (1): Call to a member function send() on a non-object in [/home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php, line 168]
+2012-12-12 15:27:35 Error: [FatalErrorException] Call to a member function send() on a non-object
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/florent/P...', 168)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/florent/P...', 168, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/florent/P...', 168, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-12 15:27:37 Error: [MissingControllerException] Controller class AddController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-12 15:27:38 Error: [MissingControllerException] Controller class ProjectController could not be found.
+#0 /home/florent/Projets/ic05/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-12 15:27:41 Error: Fatal Error (1): Call to a member function send() on a non-object in [/home/florent/Projets/ic05/lib/Cake/Routing/Dispatcher.php, line 168]
+2012-12-12 15:27:41 Error: [FatalErrorException] Call to a member function send() on a non-object
+#0 /home/florent/Projets/ic05/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/florent/P...', 168)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/florent/P...', 168, Array)
+#2 /home/florent/Projets/ic05/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/florent/P...', 168, Array)
+#3 /home/florent/Projets/ic05/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
