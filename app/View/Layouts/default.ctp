@@ -40,13 +40,13 @@
         </ul>
         <ul class="nav">
           <li class="dropdown">
-            <a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="#" data-toggle="dropdown">
               Services
               <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li><?php echo $this->Html->link('Latest Graph',
-                array('controller' => 'downloads', 'action' => 'last')); ?></li>
+                array('controller' => 'downloads', 'action' => 'latest')); ?></li>
               <li><?php echo $this->Html->link('Other Downloads',
                 array('controller' => 'downloads')); ?></li>
             </ul>
