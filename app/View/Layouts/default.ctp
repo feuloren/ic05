@@ -13,7 +13,6 @@
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
-		echo $this->fetch('script');
 	?>
 </head>
 <body>
@@ -48,7 +47,7 @@
               <li><?php echo $this->Html->link('Latest Graph',
                 array('controller' => 'downloads', 'action' => 'latest')); ?></li>
               <li><?php echo $this->Html->link('Other Downloads',
-                array('controller' => 'downloads')); ?></li>
+                array('controller' => 'downloads', 'action' => 'others')); ?></li>
             </ul>
           </li>
         </ul>
@@ -77,7 +76,8 @@
 </div>
 
       <?php echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
-            echo $this->Html->script('bootstrap.min'); ?>
+      echo $this->Html->script('bootstrap.min');
+	  echo $this->fetch('script'); ?>
 
 </body>
 </html>
