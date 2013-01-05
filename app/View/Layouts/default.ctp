@@ -33,7 +33,7 @@
           </li>
           <li>
             <?php echo $this->Html->link('Form', array('controller' =>
-            'add')); ?>
+            'form')); ?>
           </li>
         </ul>
         <ul class="nav">
@@ -72,6 +72,16 @@
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
+
+            <hr>
+
+            <footer>
+              <p class="pull-right"><?php echo
+              $this->Html->link('Administration du site', '/admin'); ?></p>
+              <p>© 2012 - J. Antonetti & F. Thévenet
+              </p>
+            </footer>
+
 </div>
 
       <?php echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
