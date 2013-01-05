@@ -1,13 +1,18 @@
 <?php
 class DownloadsController extends AppController {
-  public $uses = array('Actor', 'Keyword', 'Project');
+  public $uses = array('Actor', 'Keyword', 'Project', 'Rendering');
   
   public function index() {
-
+    
   }
 
   public function latest() {
     
+  }
+
+  public function others() {
+    $renderings = $this->Rendering->find('all');
+    $this->set(array('renderings' => $renderings));
   }
 
   public function gen($type='') {
@@ -89,6 +94,24 @@ class DownloadsController extends AppController {
             if ($p1['id'] < $p2['id'])
               $edges[] = array('p'.$p1['id'],
                                'p'.$p2['id']);
+          }
+      }
+      break;
+    case 'kbyp':
+      $keywords = $this->Keyword->find('all');
+      $edges = array();
+      foreach ($keywords as $keyword) {
+        $nodes[] = array('name' => 'k'.$keyword['Keyword']['id'],
+                         'label' => $keyword['Keyword']['title'],
+                         'type' => 'keyword');
+      }
+      $projects = $this->Project->find('all');
+      foreach ($projects as $project) {
+        foreach($project['Keyword'] as $k1)
+          foreach($project['Keyword'] as $k2) {
+            if ($k1['id'] < $k2['id'])
+              $edges[] = array('k'.$k1['id'],
+                               'k'.$k2['id']);
           }
       }
       break;
