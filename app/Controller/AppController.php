@@ -32,4 +32,20 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+  var $components = array('AppAuth');
+  
+  public function beforeFilter() {
+    $this->fetchSettings();
+  }
+
+  /* Function which read settings from DB and populate them in constants */
+  function fetchSettings(){
+    //Loading model on the fly
+    $this->loadModel('Setting');
+    //Fetching All params
+    $settings_array = $this->Setting->find('all');
+    foreach($settings_array as $value){
+      Configure::write("Settings.".$value['Setting']['name'], $value['Setting']['value']);
+    }
+  }
 }

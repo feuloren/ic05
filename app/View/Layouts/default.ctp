@@ -3,7 +3,6 @@
 <head>
 	<?php echo $this->Html->charset('utf-8'); ?>
 	<title>
-		<?php  ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
@@ -21,11 +20,11 @@
       <div class="container-fluid">
         <ul class="nav">
           <li class="active">
-            <?php echo $this->Html->link('Project Name', '/'); ?>
+            <?php echo $this->Html->link(Configure::read('Settings.ProjectName'), '/'); ?>
           </li>
           <li>
             <?php echo $this->Html->link('About', array('controller'
-            => 'project',
+            => 'home',
             'action' => 'about')); ?>
           </li>
           <li>

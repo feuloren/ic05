@@ -37,21 +37,27 @@ $firstImg = true;
       <div class="well">
         <h2>Vous avez dit Cartographies ?</h2>
         <p>Des outils pour apprendre à lire une carto !</p>
-        <p><a class="btn btn-success" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Learn more»</a></p>
+        <p><?php echo $this->Html->link('Learn More »',
+          array('controller'=>'home', 'action'=>'learn'), array('class'=>'btn
+          btn-success')); ?></p>
       </div>
     </div><!-- /.span4 -->
     <div class="span4"> 
       <div class="well">
-        <h2>Voir les Cartos DD de l'UTC</h2>
+        <h2>Voir les Cartos <?php echo Configure::read('Settings.ProjectName'); ?></h2>
         <p>Les visualiser, faire des recherches, des requêtes ...</p>
-        <p><a class="btn btn-success" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Explore »</a></p>
+        <p><?php echo $this->Html->link('Explore »',
+          array('controller'=>'graph'), array('class'=>'btn
+          btn-success')); ?></p>
       </div>
     </div><!-- /.span4 -->
     <div class="span4">
       <div class="well">
         <h2>On vous a oublié?</h2>
         <p>Contribuer aux Cartographies en remplissant le formulaire !</p>
-        <p><a class="btn btn-success" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Join us today »</a></p>
+        <p><?php echo $this->Html->link('Join us Today »',
+        array('controller'=>'add'), array('class'=>'btn
+        btn-success')); ?></p>
       </div>
     </div><!-- /.span4 -->
   </div><!-- /.row -->
