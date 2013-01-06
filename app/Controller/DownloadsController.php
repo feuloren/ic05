@@ -21,7 +21,7 @@ class DownloadsController extends AppController {
       $actors = $this->Actor->find('all');
       foreach ($actors as $actor) {
         $nodes[] = array('name'=>'a'.$actor['Actor']['id'],
-                         'label'=>$actor['Actor']['name'],
+                         'label'=>$actor['Actor']['firstName'].' '.$actor['Actor']['lastName'],
                          'type'=>'actor');
         foreach($actor['Keyword'] as $keyword)
           $edges[] = array('a'.$actor['Actor']['id'], 'k'.$keyword['id']);
@@ -48,7 +48,7 @@ class DownloadsController extends AppController {
       $edges = array();
       foreach ($actors as $actor) {
         $nodes[] = array('name' => 'a'.$actor['Actor']['id'],
-                         'label' => $actor['Actor']['name'],
+                         'label' => $actor['Actor']['firstName'].' '.$actor['Actor']['lastName'],
                          'type' => 'actor');
       }
       $projects = $this->Project->find('all');
@@ -66,7 +66,7 @@ class DownloadsController extends AppController {
       $edges = array();
       foreach ($actors as $actor) {
         $nodes[] = array('name' => 'a'.$actor['Actor']['id'],
-                         'label' => $actor['Actor']['name'],
+                         'label' => $actor['Actor']['firstName'].' '.$actor['Actor']['lastName'],
                          'type' => 'actor');
       }
       $keywords = $this->Keyword->find('all');
