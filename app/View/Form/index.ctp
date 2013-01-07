@@ -1,7 +1,7 @@
 
     <!-- THE FORM  -->
 <div class="container">
-    <form class="form-horizontal" name="x" action="form_cible.php" method="post" enctype="multipart/form-data">
+    <form class="form-horizontal" name="x" action="<?php echo $Html->link(array("controller"=>"form", "action"=>"save")); ?>" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Complete the following form to add information in the graph</legend>
             
