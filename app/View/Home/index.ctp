@@ -56,17 +56,9 @@ $firstImg = true;
         <h2>On vous a oublié?</h2>
         <p>Contribuer aux Cartographies en remplissant le formulaire !</p>
         <p><?php echo $this->Html->link('Join us Today »',
-        array('controller'=>'add'), array('class'=>'btn
+        array('controller'=>'form'), array('class'=>'btn
         btn-success')); ?></p>
       </div>
     </div><!-- /.span4 -->
   </div><!-- /.row -->
 </div>
-
-<hr>
-
-<footer>
-  <p class="pull-right"><a href="#">Back to top</a></p>
-  <p>© 2012 - J. Antonetti & F. Thévenet
-  </p>
-</footer>
