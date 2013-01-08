@@ -23,34 +23,53 @@
             <?php echo $this->Html->link(Configure::read('Settings.ProjectName'), '/'); ?>
           </li>
           <li>
-            <?php echo $this->Html->link('About', array('controller'
+            <?php echo $this->Html->link('About', array('admin'=>false, 'controller'
             => 'home',
             'action' => 'about')); ?>
           </li>
           <li>
-            <?php echo $this->Html->link('Graph', array('controller'
+            <?php echo $this->Html->link('Graph', array('admin'=>false, 'controller'
             => 'graph')); ?>
           </li>
           <li>
-            <?php echo $this->Html->link('Form', array('controller' =>
+            <?php echo $this->Html->link('Form', array('admin'=>false, 'controller' =>
             'form')); ?>
           </li>
         </ul>
         <ul class="nav">
           <li class="dropdown">
             <a href="#" data-toggle="dropdown">
-              Services
+              Downloads
               <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li><?php echo $this->Html->link('Latest Graph',
-                array('controller' => 'downloads', 'action' => 'latest')); ?></li>
+                array('admin'=>false, 'controller' => 'downloads', 'action' => 'latest')); ?></li>
               <li><?php echo $this->Html->link('Other Downloads',
-                array('controller' => 'downloads', 'action' => 'others')); ?></li>
+                array('admin'=>false, 'controller' => 'downloads', 'action' => 'others')); ?></li>
             </ul>
           </li>
         </ul>
-        <form class="navbar-search pull-left">
+        <?php if (Configure::read('Settings.DisplayStats')): ?>
+
+        <ul class="nav">
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown">
+              Stats
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><?php echo $this->Html->link('Actors Top 10',
+                array('admin'=>false, 'controller' => 'stats', 'action' => 'actors')); ?></li>
+              <li><?php echo $this->Html->link('Projects Top 10',
+                array('admin'=>false, 'controller' => 'stats', 'action' => 'projects')); ?></li>
+              <li><?php echo $this->Html->link('General',
+                array('admin'=>false, 'controller' => 'stats', 'action' => 'index')); ?></li>
+            </ul>
+          </li>
+        </ul>
+        <?php endif; ?>
+        <!--<form class="navbar-search pull-left">
           <input type="text" class="search-query" placeholder="Search">
         </form>
         <ul class="nav pull-right">
@@ -61,7 +80,7 @@
             </a>
             <ul class="dropdown-menu">
               
-            </ul>
+            </ul>-->
           </li>
         </ul>
       </div>
