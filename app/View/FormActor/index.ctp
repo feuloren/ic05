@@ -61,11 +61,9 @@
                 <label class="control-label" for="select01">The project in which the actor is involve</label>
                 <div class="controls">
                     <select name ="actor_project[]" id="select01" size="10" multiple>
-                        <option value="" selected="selected">no project</option>
-                        <option value="project1">project 1</option>
-                        <option value="project2">project 2</option>
-                        <option value="project3">project 3</option>
-                        <option value="project4">project 4</option>
+                        <?php foreach($projects as $project) { ?>
+                        <option value="<?php echo $project['Project']['id'] ; ?>"><?php echo $project['Project']['title'] ; ?></option>
+                        <?php } ?>
                     </select>
                 </div>
             </div>

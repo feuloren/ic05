@@ -2,7 +2,7 @@
     
     <!-- THE FORM  -->
 <div class="container">
-    <form class="form-horizontal" name="x" action="form_cible.php" method="post" enctype="multipart/form-data">
+    <form class="form-horizontal" name="x" action="<?php echo $this->Html->url(array("controller"=>"formProject", "action"=>"save")); ?>" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Complete the following form to add information in the graph</legend>
             
@@ -21,7 +21,6 @@
                 <label class="control-label" for="input01">Project Name</label>
                 <div class="controls">
                     <input type="text" name ="project_name" class="input-xlarge" id="input01" placeholder="Type something…">
-                        <p class="help-block">If it is not a new one use the right name.</p>
                         </div>
             </div>
             
@@ -33,16 +32,6 @@
                 </div>
             </div>
             
-            
-            <div class="control-group">
-                <label class="control-label" for="textarea">The other actors of the project </label>
-                <div class="controls">
-                    <textarea class="input-xlarge" name ="other_actors" id="textarea" rows="2"></textarea>
-                    <p class="help-block">Write the actors of the form "firt name  and Last name" and separate the different actor by a semi-colon. Example : Jenny Smith; James Kenedy</p>
-                </div>
-            </div>
-            
-            
             <div class="control-group">
                 <label class="control-label" for="fileInput">File input</label>
                 <div class="controls">
@@ -51,6 +40,27 @@
                         </div>
             </div>
             
+            <h4>Actors</h4>
+            
+            <div class="control-group">
+              <label class="control-label">The Actors</label>
+              <div class="controls">
+                <select name ="project_actors[]" size="10" multiple>
+                  <?php foreach($actors as $actor) { ?>
+                  <option value="<?php echo $actor['Actor']['id'] ; ?>"><?php echo $actor['Actor']['firstName'] . ' ' . $actor['Actor']['lastName'] ; ?></option>
+                  <?php } ?>
+                </select>
+              </div>
+            </div>
+            
+            <div class="control-group">
+              <label class="control-label" for="textarea">An actor is
+              missing ?</label>
+              <div class="controls">
+                <?php echo $this->Html->link('Add an actor', array('controller'=>'formActor'), array('target'=>'_blank', 'class'=>'btn btn-primary')); ?>
+                <p class="help-block">First, create the projet, then add an actor and link it with that project.</p>
+              </div>
+            </div>
             
             <!-- KEY WORDS  -->
             <h4> Key Words</h4>
@@ -58,14 +68,11 @@
             <div class="control-group">
                 <label class="control-label" for="select01">The key word list</label>
                 <div class="controls">
-                    <select name ="key_word_init" id="key_word_init" size="10" multiple>
-                        <option>Key word 1</option>
-                        <option>Key word 2</option>
-                        <option>Key word 3</option>
-                        <option>Key word 4</option>
-                        <option>Key word 5</option>
-                    </select>
-
+                  <select name ="project_keywords[]" size="10" multiple>
+                    <?php foreach($keywords as $kw) { ?>
+                    <option value="<?php echo $kw['Keyword']['id'] ; ?>"><?php echo $kw['Keyword']['title'] ; ?></option>
+                    <?php } ?>
+                  </select>
                     <br><br>
                     
                     <div id="gen_key_word"></div>

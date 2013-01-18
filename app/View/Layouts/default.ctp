@@ -31,25 +31,35 @@
             <?php echo $this->Html->link('Graph', array('admin'=>false, 'controller'
             => 'graph')); ?>
           </li>
-          <li>
-            <?php echo $this->Html->link('Form', array('admin'=>false, 'controller' =>
-            'form')); ?>
-          </li>
-        </ul>
-        <ul class="nav">
-          <li class="dropdown">
-            <a href="#" data-toggle="dropdown">
-              Downloads
-              <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
+
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown">
+                Form
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><?php echo $this->Html->link('New Actor',
+                  array('admin'=>false, 'controller' => 'formActor')); ?></li>
+                <li><?php echo $this->Html->link('New Project',
+                  array('admin'=>false, 'controller' => 'formProject')); ?></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown">
+                Downloads
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
               <li><?php echo $this->Html->link('Latest Graph',
                 array('admin'=>false, 'controller' => 'downloads', 'action' => 'latest')); ?></li>
               <li><?php echo $this->Html->link('Other Downloads',
                 array('admin'=>false, 'controller' => 'downloads', 'action' => 'others')); ?></li>
-            </ul>
-          </li>
-        </ul>
+              </ul>
+            </li>
+          </ul>
         <?php if (Configure::read('Settings.DisplayStats')): ?>
 
         <ul class="nav">
