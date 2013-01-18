@@ -14,7 +14,7 @@
     
     <?php echo $this->Html->link('Available renderings', array('admin'=>'true', 'controller'=>'renderings')); ?></br></br>
     
-    <?php echo $this->Html->link('Manage Administrators', array('admin'=>'true', 'controller'=>'admins')); ?></br></br>
+    <?php echo $this->Html->link('Manage Administrators', array('admin'=>'true', 'controller'=>'users')); ?></br></br>
     
     <?php echo $this->Html->link('Actors', array('admin'=>'true', 'controller'=>'actors')); ?></br></br>
     

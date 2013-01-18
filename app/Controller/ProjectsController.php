@@ -40,10 +40,8 @@ class ProjectsController extends AppController {
 	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->Project->create();
-			if ($this->Project->save($this->request->data)) {
-				$this->flash(__('Project saved.'), array('action' => 'index'));
-			} else {
-			}
+			$this->Project->save($this->request->data);
+            $this->redirect(array('action' => 'index'));
 		}
 		$keywords = $this->Project->Keyword->find('list');
 		$actors = $this->Project->Actor->find('list');
@@ -63,10 +61,8 @@ class ProjectsController extends AppController {
 			throw new NotFoundException(__('Invalid project'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->Project->save($this->request->data)) {
-				$this->flash(__('The project has been saved.'), array('action' => 'index'));
-			} else {
-			}
+            $this->Project->save($this->request->data);
+			$this->redirect(array('action' => 'index'));
 		} else {
 			$this->request->data = $this->Project->read(null, $id);
 		}
@@ -91,10 +87,7 @@ class ProjectsController extends AppController {
 		if (!$this->Project->exists()) {
 			throw new NotFoundException(__('Invalid project'));
 		}
-		if ($this->Project->delete()) {
-			$this->flash(__('Project deleted'), array('action' => 'index'));
-		}
-		$this->flash(__('Project was not deleted'), array('action' => 'index'));
-		$this->redirect(array('action' => 'index'));
+		$this->Project->delete();
+        $this->redirect(array('action' => 'index'));
 	}
 }

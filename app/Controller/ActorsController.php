@@ -26,12 +26,8 @@ class ActorsController extends AppController {
 	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->Actor->create();
-			if ($this->Actor->save($this->request->data)) {
-				$this->Session->setFlash(__('The actor has been saved'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The actor could not be saved. Please, try again.'));
-			}
+			$this->Actor->save($this->request->data);
+			$this->redirect(array('action' => 'index'));
 		}
 		$keywords = $this->Actor->Keyword->find('list');
 		$projects = $this->Actor->Project->find('list');
@@ -51,12 +47,8 @@ class ActorsController extends AppController {
 			throw new NotFoundException(__('Invalid actor'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->Actor->save($this->request->data)) {
-				$this->Session->setFlash(__('The actor has been saved'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The actor could not be saved. Please, try again.'));
-			}
+            $this->Actor->save($this->request->data);
+			$this->redirect(array('action' => 'index'));
 		} else {
 			$this->request->data = $this->Actor->read(null, $id);
 		}
@@ -81,11 +73,8 @@ class ActorsController extends AppController {
 		if (!$this->Actor->exists()) {
 			throw new NotFoundException(__('Invalid actor'));
 		}
-		if ($this->Actor->delete()) {
-			$this->Session->setFlash(__('Actor deleted'));
-			$this->redirect(array('action' => 'index'));
-		}
-		$this->Session->setFlash(__('Actor was not deleted'));
+		$this->Actor->delete()
+		$this->redirect(array('action' => 'index'));
 		$this->redirect(array('action' => 'index'));
 	}
 }

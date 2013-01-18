@@ -40,10 +40,8 @@ class KeywordsController extends AppController {
 	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->Keyword->create();
-			if ($this->Keyword->save($this->request->data)) {
-				$this->flash(__('Keyword saved.'), array('action' => 'index'));
-			} else {
-			}
+			$this->Keyword->save($this->request->data);
+			$this->redirect(array('action' => 'index'));
 		}
 		$actors = $this->Keyword->Actor->find('list');
 		$projects = $this->Keyword->Project->find('list');
@@ -63,10 +61,8 @@ class KeywordsController extends AppController {
 			throw new NotFoundException(__('Invalid keyword'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->Keyword->save($this->request->data)) {
-				$this->flash(__('The keyword has been saved.'), array('action' => 'index'));
-			} else {
-			}
+          $this->Keyword->save($this->request->data);
+          $this->redirect(array('action' => 'index'));
 		} else {
 			$this->request->data = $this->Keyword->read(null, $id);
 		}
@@ -91,10 +87,7 @@ class KeywordsController extends AppController {
 		if (!$this->Keyword->exists()) {
 			throw new NotFoundException(__('Invalid keyword'));
 		}
-		if ($this->Keyword->delete()) {
-			$this->flash(__('Keyword deleted'), array('action' => 'index'));
-		}
-		$this->flash(__('Keyword was not deleted'), array('action' => 'index'));
+		$this->Keyword->delete();
 		$this->redirect(array('action' => 'index'));
 	}
 }

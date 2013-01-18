@@ -21,6 +21,12 @@ class FormProjectController extends AppController {
         else
             $keywords = $this->request->data['project_keywords'];
 
+        /*$other_keywords = explode(';', $this->request->data['other_key_word']);
+        foreach($others_keywords as $keyword) {
+            $keyword = trim();
+        }
+        var_dump($other_keywords);*/
+
         if (!isset($this->request->data['project_actors']))
             $actors = array();
         else

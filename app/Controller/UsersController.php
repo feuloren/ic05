@@ -40,10 +40,8 @@ class UsersController extends AppController {
 	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->User->create();
-			if ($this->User->save($this->request->data)) {
-				$this->flash(__('User saved.'), array('action' => 'index'));
-			} else {
-			}
+			$this->User->save($this->request->data);
+			$this->redirect(array('action' => 'index'));
 		}
 	}
 
@@ -60,10 +58,8 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->User->save($this->request->data)) {
-				$this->flash(__('The user has been saved.'), array('action' => 'index'));
-			} else {
-			}
+            $this->User->save($this->request->data);
+			$this->redirect(array('action' => 'index'));
 		} else {
 			$this->request->data = $this->User->read(null, $id);
 		}
@@ -85,10 +81,7 @@ class UsersController extends AppController {
 		if (!$this->User->exists()) {
 			throw new NotFoundException(__('Invalid user'));
 		}
-		if ($this->User->delete()) {
-			$this->flash(__('User deleted'), array('action' => 'index'));
-		}
-		$this->flash(__('User was not deleted'), array('action' => 'index'));
+		$this->User->delete();
 		$this->redirect(array('action' => 'index'));
 	}
 }

@@ -16,6 +16,9 @@ class DownloadsController extends AppController {
   }
 
   public function gen($type='') {
+    $edges = array();
+    $nodes = array();
+
     switch ($type) {
     case '3p':
       $actors = $this->Actor->find('all');
