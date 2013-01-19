@@ -28,13 +28,14 @@
 Router::connect('/', array('controller' => 'home', 'action' => 'index'));
 Router::connect('/about', array('controller' => 'home', 'action' => 'about'));
 Router::connect('/learn', array('controller' => 'home', 'action' => 'learn'));
+Router::connect('/graph', array('controller' => 'graph'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 
-Router::connect('/admin', array('controller' => 'admin', 'action' => 'index'));
+Router::connect('/admin', array('controller' => 'admin', 'action' => 'index', "admin"=>True));
 Router::connect('/login', array('controller' => 'admin', 'action' => 'login'));
 Router::connect('/logout', array('controller' => 'admin', 'action' => 'logout'));
 /**

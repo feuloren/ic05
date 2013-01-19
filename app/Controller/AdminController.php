@@ -16,7 +16,7 @@ class AdminController extends AppController {
     $this->redirect($this->Auth->logout());
   }
 
-  function index() {
+  function admin_index() {
 
   }
 
