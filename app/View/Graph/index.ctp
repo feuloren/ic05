@@ -1,25 +1,20 @@
 
 <style type="text/css">
-  body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background-color: black;
-  }
   .sidebar-nav {
   padding: 9px 0;
   }
 </style>
 
 <!-- for the graph visualization -->
-<?php $this->Html->css("neo_sigma"); ?>
+   <?php $this->Html->css("parisjs", null, array('inline'=>false)); ?>
 
 <!-- Vertical MENU for the Graph -->
 <div class="container-fluid">
   <div class="row-fluid">
 
-    <div class="span3">
+   <div class="span3">
 
-      <div class="well sidebar-nav" style="opacity:0.7">
+      <div class="well sidebar-nav" style="opacity:0.7;">
         <ul class="nav nav-list">
 
           <li class="nav-header">Monopartite graph of</li>
@@ -48,14 +43,17 @@
       </div><!-- END : Vertical MENU for the Graph -->
 
     </div>
+   
+   <div id="sigma-container"></div>
 
   </div><!--/.fluid-container-->
 
-  <!--<div class="span12 sigma-parent" id="sigma-example-parent">-->
-  <div class="sigma-expand" id="sigma-example"></div>
-  <!--</div>-->
 
 
-  <?php $this->Html->css("sigma.min"); ?>
-  <?php $this->Html->css("sigma.parseGexf"); ?>
-  <?php $this->Html->css("neo_sigma"); ?>
+  <?php $this->Html->script("sigma.min", array("block"=>"script")); ?>
+  <?php $this->Html->script("sigma.forceatlas2", array("block"=>"script")); ?>
+  <?php $this->Html->script("parisjs", array("block"=>"script")); ?>
+  <?php $this->Html->scriptBlock("$(function() { init_sigma('".
+                              $this->Html->url(array('controller'=>'downloads', 'action'=>'gen', '3p'),
+                                               array('absolute'=>true)).
+                               "'); })", array("block"=>"script")); ?>
