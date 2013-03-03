@@ -30,25 +30,30 @@
             </div>
             
             <div class="control-group">
-                <label class="control-label" for="input01">Email</label>
+                <label class="control-label" for="inputIcon">Email</label>
                 <div class="controls">
+                  <div class="input-prepend">
+                    <span class="add-on"><i class="icon-envelope"></i></span>
                     <input type="email" name="email" autocomplete="on" class="input-xlarge" id="input01" placeholder="Type something…">
                         <p class="help-block">Whether your are a new actors or not, if you are not new use the email you used the first time.</p>
                         </div>
             </div>
             
+
+            
             <div class="control-group">
                 <label class="control-label" for="select01">Type of actor</label>
                 <div class="controls">
                     <select name ="actor_type" id="select01">
-                        <option value="" selected="selected">no type</option>
-                        <option>type 1</option>
-                        <option>type 2</option>
-                        <option>type 3</option>
-                        <option>type 4</option>
+                      <option value="" selected="selected">no type</option>
+                      <?php foreach($types as $type) { ?>
+                        <option value="<?php echo $type['Type']['id'] ; ?>"> <?php echo $type['Type']['title'] ; ?> </option>
+                        <?php } ?>
                     </select>
                 </div>
             </div>
+            
+            
             
             <div class="control-group">
                 <label class="control-label" for="textarea">The actor 's descrition </label>
@@ -82,7 +87,7 @@
            
 
     </div> <!-- end div container  -->
-
+</div> 
     
     <!-- BUTTONS AT THE BOTTOM  -->
             <div align="center" class="form-actions">

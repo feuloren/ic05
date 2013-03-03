@@ -1,3 +1,5 @@
+<?php if (Configure::read('Settings.DisplayImages')): ?>
+
 <?php
    $this->Html->scriptBlock('$(function(){
 $("#myCarousel").carousel();
@@ -28,6 +30,13 @@ $firstImg = true;
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
   <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
 </div><!-- /.carousel -->
+
+<?php endif; ?>
+
+
+
+
+<?php if (Configure::read('Settings.Display3Blocks')): ?>
 
 <div class="container marketing">
   
@@ -62,3 +71,12 @@ $firstImg = true;
     </div><!-- /.span4 -->
   </div><!-- /.row -->
 </div>
+
+<?php endif; ?>
+
+
+<!-- The InfoHome elements -->
+<?php echo Configure::read('Settings.InfoHome'); ?>
+
+
+

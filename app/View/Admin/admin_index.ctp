@@ -21,6 +21,10 @@
     <?php echo $this->Html->link('Projects', array('admin'=>'true', 'controller'=>'projects')); ?></br></br>
     
     <?php echo $this->Html->link('Keywords', array('admin'=>'true', 'controller'=>'keywords')); ?></br></br>
+    
+    <?php echo $this->Html->link('Types', array('admin'=>'true', 'controller'=>'types')); ?></br></br>
+
+    
     </h5>
 
 

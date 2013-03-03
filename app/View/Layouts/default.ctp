@@ -8,7 +8,10 @@
 	<?php
 		echo $this->Html->meta('icon');
 
-    echo $this->Html->css(array('bootstrap.min', 'own'));
+		echo $this->Html->css(array('bootstrap.min', 'own'));
+		
+		echo $this->Html->css('mfglabs_iconset.min');
+
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -20,22 +23,28 @@
       <div class="container-fluid">
         <ul class="nav">
           <li class="active">
-            <?php echo $this->Html->link(Configure::read('Settings.ProjectName'), '/'); ?>
+          <a>
+          <i class="icon-home icon-white"></i> <?php echo $this->Html->link(Configure::read('Settings.ProjectName'), '/'); ?>
+          </a>
           </li>
           <li>
             <?php echo $this->Html->link('About', array('admin'=>false, 'controller'
             => 'home',
             'action' => 'about')); ?>
           </li>
+          
+          
           <li>
-            <?php echo $this->Html->link('Graph', array('admin'=>false, 'controller'
+           <?php echo $this->Html->image('icon-graph.ico'); ?>
+          <?php echo $this->Html->link('Graph', array('admin'=>false, 'controller'
             => 'graph')); ?>
           </li>
 
+   
           <ul class="nav">
             <li class="dropdown">
               <a href="#" data-toggle="dropdown">
-                Form
+              <i class="icon-pencil"></i> Form
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
@@ -46,9 +55,16 @@
               </ul>
             </li>
           </ul>
+          
+          
+          
+          
+          
           <ul class="nav">
             <li class="dropdown">
               <a href="#" data-toggle="dropdown">
+                <i class="icon-trophy gradient icon3x" aria-hidden="true"></i>
+
                 Downloads
                 <b class="caret"></b>
               </a>
@@ -60,12 +76,13 @@
               </ul>
             </li>
           </ul>
+        
+        
         <?php if (Configure::read('Settings.DisplayStats')): ?>
-
         <ul class="nav">
           <li class="dropdown">
             <a href="#" data-toggle="dropdown">
-              Stats
+              <i class="icon-star-empty"></i> Stats
               <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
@@ -79,18 +96,7 @@
           </li>
         </ul>
         <?php endif; ?>
-        <!--<form class="navbar-search pull-left">
-          <input type="text" class="search-query" placeholder="Search">
-        </form>
-        <ul class="nav pull-right">
-          <li class="dropdown">
-            <a href="http://www.w3resource.com/twitter-bootstrap/navbar-example.html#" class="dropdown-toggle" data-toggle="dropdown">
-              Social
-              <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              
-            </ul>-->
+
           </li>
         </ul>
       </div>
@@ -98,6 +104,7 @@
   </div>
 
 <div class="container-fluid" id="main">
+
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
@@ -107,7 +114,9 @@
             <footer>
               <p class="pull-right"><?php echo
               $this->Html->link('Administration du site', '/admin'); ?></p>
-              <p>© 2012 - J. Antonetti & F. Thévenet
+              <p>
+              ©<?php echo Configure::read('Settings.Date'); ?> - 
+              <?php echo Configure::read('Settings.Actors'); ?>
               </p>
             </footer>
 

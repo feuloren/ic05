@@ -4,10 +4,11 @@
  *
  */
 class FormActorController extends AppController {
-  public $uses = array("Actor", "Project");
+  public $uses = array("Actor", "Project","Type");
 
     public function index() {
       $this->set('projects', $this->Project->find('all'));
+      $this->set('types', $this->Type->find('all'));
     }
     
     public function save() {

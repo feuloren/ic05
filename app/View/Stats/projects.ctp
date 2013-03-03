@@ -14,7 +14,7 @@
       <table class="table table-striped table-bordered">
         <thead>
           <tr>
-            <th>Rnk</th>
+            <th>Rank</th>
             <th>Name</th>
           </tr>
         </thead>
