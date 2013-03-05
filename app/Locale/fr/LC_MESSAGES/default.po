@@ -1,0 +1,310 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ic05\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Florent Thévenet <florent@fthevenet.fr>\n"
+"Language-Team:  <florent@fthevenet.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+
+#: Controller/ActorsController.php:47;74
+msgid "Invalid actor"
+msgstr ""
+
+#: Controller/AdminController.php:10
+msgid "Username or password is incorrect"
+msgstr ""
+
+#: Controller/ImagesController.php:30;62;85
+msgid "Invalid image"
+msgstr ""
+
+#: Controller/KeywordsController.php:30;61;88
+msgid "Invalid keyword"
+msgstr ""
+
+#: Controller/ProjectsController.php:30;61;88
+msgid "Invalid project"
+msgstr ""
+
+#: Controller/SettingsController.php:44
+msgid "Invalid setting"
+msgstr ""
+
+#: Controller/UsersController.php:30;58;82
+msgid "Invalid user"
+msgstr ""
+
+#: View/Actors/admin_add.ctp:4
+msgid "Admin Add Actor"
+msgstr ""
+
+#: View/Actors/admin_add.ctp:16
+#: View/Actors/admin_edit.ctp:17
+#: View/Images/admin_add.ctp:11
+#: View/Images/admin_edit.ctp:12
+#: View/Keywords/admin_add.ctp:12
+#: View/Keywords/admin_edit.ctp:13
+#: View/Projects/admin_add.ctp:13
+#: View/Projects/admin_edit.ctp:14
+#: View/Settings/admin_add.ctp:10
+#: View/Settings/admin_edit.ctp:11
+#: View/Users/admin_add.ctp:11
+#: View/Users/admin_edit.ctp:12
+msgid "Submit"
+msgstr ""
+
+#: View/Actors/admin_add.ctp:19
+#: View/Actors/admin_edit.ctp:20
+#: View/Actors/admin_index.ctp:14;51
+#: View/Images/admin_add.ctp:14
+#: View/Images/admin_edit.ctp:15
+#: View/Images/admin_index.ctp:10
+#: View/Keywords/admin_add.ctp:15
+#: View/Keywords/admin_edit.ctp:16
+#: View/Keywords/admin_index.ctp:10;44
+#: View/Projects/admin_add.ctp:16
+#: View/Projects/admin_edit.ctp:17
+#: View/Projects/admin_index.ctp:11;46
+#: View/Settings/admin_add.ctp:13
+#: View/Settings/admin_edit.ctp:14
+#: View/Settings/admin_index.ctp:9
+#: View/Users/admin_add.ctp:14
+#: View/Users/admin_edit.ctp:15
+#: View/Users/admin_index.ctp:9
+msgid "Actions"
+msgstr ""
+
+#: View/Actors/admin_add.ctp:22
+#: View/Actors/admin_edit.ctp:24
+#: View/Keywords/admin_add.ctp:19
+#: View/Keywords/admin_edit.ctp:21
+#: View/Keywords/admin_index.ctp:47
+#: View/Projects/admin_add.ctp:22
+#: View/Projects/admin_edit.ctp:24
+#: View/Projects/admin_index.ctp:51
+msgid "List Actors"
+msgstr ""
+
+#: View/Actors/admin_add.ctp:23
+#: View/Actors/admin_edit.ctp:25
+#: View/Actors/admin_index.ctp:54
+#: View/Keywords/admin_add.ctp:18
+#: View/Keywords/admin_edit.ctp:20
+#: View/Projects/admin_add.ctp:20
+#: View/Projects/admin_edit.ctp:22
+#: View/Projects/admin_index.ctp:49
+msgid "List Keywords"
+msgstr ""
+
+#: View/Actors/admin_add.ctp:24
+#: View/Actors/admin_edit.ctp:26
+#: View/Actors/admin_index.ctp:55
+#: View/Keywords/admin_index.ctp:46
+#: View/Projects/admin_add.ctp:21
+#: View/Projects/admin_edit.ctp:23
+#: View/Projects/admin_index.ctp:50
+msgid "New Keyword"
+msgstr ""
+
+#: View/Actors/admin_add.ctp:25
+#: View/Actors/admin_edit.ctp:27
+#: View/Actors/admin_index.ctp:56
+#: View/Keywords/admin_add.ctp:21
+#: View/Keywords/admin_edit.ctp:23
+#: View/Keywords/admin_index.ctp:49
+#: View/Projects/admin_add.ctp:19
+#: View/Projects/admin_edit.ctp:21
+msgid "List Projects"
+msgstr ""
+
+#: View/Actors/admin_add.ctp:26
+#: View/Actors/admin_edit.ctp:28
+#: View/Actors/admin_index.ctp:57
+#: View/Keywords/admin_add.ctp:22
+#: View/Keywords/admin_edit.ctp:24
+#: View/Keywords/admin_index.ctp:50
+#: View/Projects/admin_index.ctp:48
+msgid "New Project"
+msgstr ""
+
+#: View/Actors/admin_edit.ctp:4
+msgid "Admin Edit Actor"
+msgstr ""
+
+#: View/Actors/admin_edit.ctp:23
+#: View/Actors/admin_index.ctp:30
+#: View/Images/admin_edit.ctp:18
+#: View/Images/admin_index.ctp:22
+#: View/Keywords/admin_edit.ctp:19
+#: View/Keywords/admin_index.ctp:23
+#: View/Projects/admin_edit.ctp:20
+#: View/Projects/admin_index.ctp:25
+#: View/Settings/admin_edit.ctp:17
+#: View/Users/admin_edit.ctp:18
+#: View/Users/admin_index.ctp:20
+msgid "Delete"
+msgstr ""
+
+#: View/Actors/admin_edit.ctp:23
+#: View/Actors/admin_index.ctp:30
+#: View/Images/admin_edit.ctp:18
+#: View/Images/admin_index.ctp:22
+#: View/Keywords/admin_edit.ctp:19
+#: View/Keywords/admin_index.ctp:23
+#: View/Projects/admin_edit.ctp:20
+#: View/Projects/admin_index.ctp:25
+#: View/Settings/admin_edit.ctp:17
+#: View/Users/admin_edit.ctp:18
+#: View/Users/admin_index.ctp:20
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View/Actors/admin_index.ctp:2
+msgid "Actors"
+msgstr ""
+
+#: View/Actors/admin_index.ctp:29
+#: View/Images/admin_index.ctp:21
+#: View/Keywords/admin_index.ctp:22
+#: View/Projects/admin_index.ctp:24
+#: View/Settings/admin_index.ctp:19
+#: View/Users/admin_index.ctp:19
+msgid "Edit"
+msgstr ""
+
+#: View/Actors/admin_index.ctp:38
+#: View/Images/admin_index.ctp:30
+#: View/Keywords/admin_index.ctp:31
+#: View/Projects/admin_index.ctp:33
+#: View/Settings/admin_index.ctp:27
+#: View/Users/admin_index.ctp:28
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View/Actors/admin_index.ctp:44
+#: View/Images/admin_index.ctp:36
+#: View/Keywords/admin_index.ctp:37
+#: View/Projects/admin_index.ctp:39
+#: View/Settings/admin_index.ctp:33
+#: View/Users/admin_index.ctp:34
+msgid "previous"
+msgstr ""
+
+#: View/Actors/admin_index.ctp:46
+#: View/Images/admin_index.ctp:38
+#: View/Keywords/admin_index.ctp:39
+#: View/Projects/admin_index.ctp:41
+#: View/Settings/admin_index.ctp:35
+#: View/Users/admin_index.ctp:36
+msgid "next"
+msgstr ""
+
+#: View/Actors/admin_index.ctp:53
+#: View/Keywords/admin_add.ctp:20
+#: View/Keywords/admin_edit.ctp:22
+#: View/Keywords/admin_index.ctp:48
+#: View/Projects/admin_add.ctp:23
+#: View/Projects/admin_edit.ctp:25
+#: View/Projects/admin_index.ctp:52
+msgid "New Actor"
+msgstr ""
+
+#: View/Home/index.ctp:38
+msgid "Vous avez dit Cartographies ?"
+msgstr "Bonjour"
+
+#: View/Images/admin_add.ctp:4
+msgid "Admin Add Image"
+msgstr ""
+
+#: View/Images/admin_add.ctp:17
+#: View/Images/admin_edit.ctp:19
+msgid "List Images"
+msgstr ""
+
+#: View/Images/admin_edit.ctp:4
+msgid "Admin Edit Image"
+msgstr ""
+
+#: View/Images/admin_index.ctp:2
+msgid "Images"
+msgstr ""
+
+#: View/Images/admin_index.ctp:43
+msgid "New Image"
+msgstr ""
+
+#: View/Keywords/admin_add.ctp:4
+msgid "Admin Add Keyword"
+msgstr ""
+
+#: View/Keywords/admin_edit.ctp:4
+msgid "Admin Edit Keyword"
+msgstr ""
+
+#: View/Keywords/admin_index.ctp:2
+msgid "Keywords"
+msgstr ""
+
+#: View/Keywords/admin_index.ctp:21
+#: View/Projects/admin_index.ctp:23
+msgid "View"
+msgstr ""
+
+#: View/Projects/admin_add.ctp:4
+msgid "Admin Add Project"
+msgstr ""
+
+#: View/Projects/admin_edit.ctp:4
+msgid "Admin Edit Project"
+msgstr ""
+
+#: View/Projects/admin_index.ctp:2
+msgid "Projects"
+msgstr ""
+
+#: View/Settings/admin_add.ctp:4
+msgid "Admin Add Setting"
+msgstr ""
+
+#: View/Settings/admin_add.ctp:16
+#: View/Settings/admin_edit.ctp:18
+msgid "List Settings"
+msgstr ""
+
+#: View/Settings/admin_edit.ctp:4
+msgid "Admin Edit Setting"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:2
+msgid "Settings"
+msgstr ""
+
+#: View/Users/admin_add.ctp:4
+msgid "Add Admin"
+msgstr ""
+
+#: View/Users/admin_add.ctp:17
+#: View/Users/admin_edit.ctp:19
+msgid "List Admins"
+msgstr ""
+
+#: View/Users/admin_edit.ctp:4
+msgid "Admin Edit"
+msgstr ""
+
+#: View/Users/admin_index.ctp:2
+msgid "Admins"
+msgstr "Administrateurs"
+
+#: View/Users/admin_index.ctp:41
+msgid "New Admin"
+msgstr "Nouvel Administrateur"
+
