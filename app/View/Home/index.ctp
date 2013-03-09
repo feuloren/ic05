@@ -17,10 +17,10 @@ $firstImg = true;
       <img src="<?php echo $this->webroot . 'imagesHome/' . $image['Image']['path']; ?>" alt="">
       <div class="container">
         <div class="carousel-caption">
-          <h1><?php echo $image['Image']['name']; ?></h1>
+          <h3><?php echo $image['Image']['name']; ?></h3>
           
           <p class="lead" >
-            <small><?php echo $image['Image']['description']; ?></small>
+            <h5><small><?php echo $image['Image']['description']; ?></h5></small>
           </p>
         </div>
       </div>
@@ -42,32 +42,26 @@ $firstImg = true;
   
   <!-- Three columns of text below the carousel -->
   <div class="row">
-    <div class="span4">
-      <div class="well">
-        <h2>Vous avez dit Cartographies ?</h2>
-        <p>Des outils pour apprendre à lire une carto !</p>
+    <div class="span4" style="text-align: center;">
+        <h3>How about graph?</h3>
+        <p>Some tools to understand them!</p>
         <p><?php echo $this->Html->link('Learn More »',
           array('controller'=>'home', 'action'=>'learn'), array('class'=>'btn
-          btn-success')); ?></p>
-      </div>
+          ')); ?></p>
     </div><!-- /.span4 -->
-    <div class="span4"> 
-      <div class="well">
-        <h2>Voir les Cartos <?php echo Configure::read('Settings.ProjectName'); ?></h2>
-        <p>Les visualiser, faire des recherches, des requêtes ...</p>
+    <div class="span4"  style="text-align: center;"> 
+        <h3>See the graphs <?php echo Configure::read('Settings.ProjectName'); ?></h3>
+        <p>Visualize, search ...</p>
         <p><?php echo $this->Html->link('Explore »',
           array('controller'=>'graph'), array('class'=>'btn
-          btn-success')); ?></p>
-      </div>
+          ')); ?></p>
     </div><!-- /.span4 -->
-    <div class="span4">
-      <div class="well">
-        <h2>On vous a oublié?</h2>
-        <p>Contribuer aux Cartographies en remplissant le formulaire !</p>
+    <div class="span4"  style="text-align: center;">
+        <h3>You had been forgotten?</h3>
+        <p>Contribute by filling up the form!</p>
         <p><?php echo $this->Html->link('Join us Today »',
         array('controller'=>'form'), array('class'=>'btn
-        btn-success')); ?></p>
-      </div>
+        ')); ?></p>
     </div><!-- /.span4 -->
   </div><!-- /.row -->
 </div>
@@ -76,7 +70,8 @@ $firstImg = true;
 
 
 <!-- The InfoHome elements -->
-<?php echo Configure::read('Settings.InfoHome'); ?>
 
+
+<?php echo Configure::read('Settings.InfoHome'); ?>
 
 

@@ -4,17 +4,13 @@
 <div class="container">
     <form class="form-horizontal" name="x" action="<?php echo $this->Html->url(array("controller"=>"formProject", "action"=>"save")); ?>" method="post" enctype="multipart/form-data">
         <fieldset>
-            <legend>Complete the following form to add information in the graph</legend>
+            <h3>To add information about a project</h3>
             
-            <blockquote>
-                <p>With this form you can add a project
+           <blockquote>
+                <p>Fill the form!
                 </p>
-            </blockquote>
+            </blockquote> 
             
-            
-            
-            <!-- PROJECT  -->
-            <h2> Project</h2>
             
             
             <div class="control-group">
@@ -92,7 +88,7 @@
 
     
     <!-- BUTTONS AT THE BOTTOM  -->
-            <div align="center" class="form-actions">
+            <div align="center">
                 <button align="center" type="submit" class="btn btn-primary">Save changes</button>
                 <button align="center" class="btn">Cancel</button>    
         </fieldset>

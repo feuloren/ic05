@@ -16,17 +16,148 @@
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 	?>
+	
+	
+	<!-- CSS -->
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        background-color: #f5f5f5;
+        margin-top: 8px;
+        
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+        
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      .marketing {
+  color: #5a5a5a;
+}
+	.marketing h1 {
+  text-align: center;
+  margin: 60px 0 10px;
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -1px;
+  }
+
+.marketing h2 {
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.marketing h3 {
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+
+.marketing h4 {
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.marketing h5 {
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.marketing h6 {
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.marketing p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      .container {
+        width: auto;
+        max-width: 1020px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+    </style>
+	
+	
+	
 </head>
 <body>
+
+
+
+
+<div id="wrap">
+
+
+<div class="container marketing">
+
   <div class="navbar navbar-fixed-top navbar-inverse">
     <div class="navbar-inner">
-      <div class="container-fluid">
-        <ul class="nav">
-          <li class="active">
-          <a>
-          <i class="icon-home icon-white"></i> <?php echo $this->Html->link(Configure::read('Settings.ProjectName'), '/'); ?>
-          </a>
+      <div class="container"> 
+      
+      <h5>
+          <ul class="nav">
+          <li>
+           <div class="pull-right" id='title'>
+          <?php echo $this->Html->image("icon_graph.ico", array(
+	          	"alt" => "graph",
+	          	'url' => array('controller' => 'graph')
+	      )); ?>
+           </div>
+          </li> 
+        
+          <li class="active" style="font-size: 20px;font-weight: 350; color: #5a5a5a;">
+           <?php echo $this->Html->link(Configure::read('Settings.ProjectName'), '/'); ?>
           </li>
+          
+             
           <li>
             <?php echo $this->Html->link('About', array('admin'=>false, 'controller'
             => 'home',
@@ -35,16 +166,17 @@
           
           
           <li>
-           <?php echo $this->Html->image('icon-graph.ico'); ?>
           <?php echo $this->Html->link('Graph', array('admin'=>false, 'controller'
-            => 'graph')); ?>
+            => 'graph')); ?> 
           </li>
+          
 
    
           <ul class="nav">
             <li class="dropdown">
               <a href="#" data-toggle="dropdown">
-              <i class="icon-pencil"></i> Form
+             </i> 
+              Form
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
@@ -58,13 +190,11 @@
           
           
           
-          
+     
           
           <ul class="nav">
             <li class="dropdown">
               <a href="#" data-toggle="dropdown">
-                <i class="icon-trophy gradient icon3x" aria-hidden="true"></i>
-
                 Downloads
                 <b class="caret"></b>
               </a>
@@ -102,6 +232,8 @@
       </div>
     </div>
   </div>
+</h5>
+
 
 <div class="container-fluid" id="main">
 
@@ -109,18 +241,36 @@
 
 			<?php echo $this->fetch('content'); ?>
 
-            <hr>
 
-            <footer>
-              <p class="pull-right"><?php echo
-              $this->Html->link('Administration du site', '/admin'); ?></p>
-              <p>
+
+</div></div>
+
+
+<div id="push"></div>
+
+
+
+      <div id="footer">
+
+
+
+
+      <div class="container">
+      	  <p class="muted credit">
+      	  
+      	        <hr>
+              <p class="pull-right">
+              <?php echo
+              $this->Html->link('Administration du site', '/admin'); ?>
+              </p>
+           </p>
+              <p class="muted credit">
               ©<?php echo Configure::read('Settings.Date'); ?> - 
               <?php echo Configure::read('Settings.Actors'); ?>
               </p>
-            </footer>
+      </div>
+      </div>
 
-</div>
 
       <?php echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
       echo $this->Html->script('bootstrap.min');

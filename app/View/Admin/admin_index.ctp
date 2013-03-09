@@ -1,5 +1,5 @@
 <div class="well well-large">
-  <h1>Interface administrateur Collab-graph</h1>
+  <h2>The admin interface</h2>
   <blockquote>
   <p>To manage the web site ...</p>
 </blockquote>
@@ -8,11 +8,15 @@
 <div class="container">
 
     
-    <h5><?php echo $this->Html->link('Project Settings', array('admin'=>true, 'controller'=>'settings')); ?></br></br>
+    <h4>
     
-    <?php echo $this->Html->link('Images for home page', array('admin'=>'true', 'controller'=>'images')); ?></br></br>
     
-    <?php echo $this->Html->link('Available renderings', array('admin'=>'true', 'controller'=>'renderings')); ?></br></br>
+   <div align="center"><?php echo $this->Html->link('Project Settings', array('admin'=>true, 'controller'=>'settings')); ?></br></br>
+    
+   <?php echo $this->Html->link('Images for home page', array('admin'=>'true', 'controller'=>'images')); ?></br></br>
+    
+    <!-- 
+    <?php echo $this->Html->link('Available renderings', array('admin'=>'true', 'controller'=>'renderings')); ?></br></br> -->
     
     <?php echo $this->Html->link('Manage Administrators', array('admin'=>'true', 'controller'=>'users')); ?></br></br>
     
@@ -25,7 +29,7 @@
     <?php echo $this->Html->link('Types', array('admin'=>'true', 'controller'=>'types')); ?></br></br>
 
     
-    </h5>
+    </h4>
 
 
 </div>

@@ -14,7 +14,7 @@
 	<tr>
 		<td><?php echo h($keyword['Keyword']['id']); ?>&nbsp;</td>
 		<td><?php echo h($keyword['Keyword']['title']); ?>&nbsp;</td>
-		<td><?php echo h($keyword['Keyword']['official']); ?>&nbsp;</td>
+		<td><?php echo $keyword['Keyword']['official']=='1'? '<i class="icon-ok"></i>' :''; ?>&nbsp;</td>
 		<td><?php echo h($keyword['Keyword']['created']); ?>&nbsp;</td>
 		<td><?php echo h($keyword['Keyword']['modified']); ?>&nbsp;</td>
 		<td class="actions">

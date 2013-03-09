@@ -3,27 +3,30 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Learn more about graphs!</h1>
+        <h3>Learn more about graphs!</h3>
         <p>From theoretical and practical approaches ...</p>
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
-        <div class="span3">
-          <h2>A blog</h2>
-          <p>A reference in the cartography area.</p>
+        <div class="span4">
+          <h4><b>A blog</b></h4>
+          <h6>A reference in the cartography area.</h6>
           <p><a class="btn btn-primary" href="http://ateliercartographie.wordpress.com">View details »</a></p>
         </div>
+        
         <div class="span4">
-          <h2>An academia course</h2>
-          <p>4 easy to understand videos, in the "Networks" section.</p>
-          <p><a class="btn btn-success" href="https://class.coursera.org/modelthinking/lecture/preview">View details »</a></p>
-       </div>
-        <div class="span5">
-            <h2>An open source platform</h2>
-            <p>Gephi, an interactive visualization and exploration platform for all kinds of networks.</p>
-          <p><a class="btn btn-warning" href="https://gephi.org">View details »</a></p>
+            <h4><b>An open source platform</b></h4>
+            <h6>Gephi, an interactive visualization and exploration platform for all kinds of networks.</h6>
+          <p><a class="btn btn-primary" href="https://gephi.org">View details »</a><p>
         </div>
+        
+        <div class="span4">
+          <h4><b>An academia course</b></h4>
+          <h6>4 easy to understand videos, in the "Networks" section.</h6>
+          <p><a class="btn btn-primary" href="https://class.coursera.org/modelthinking/lecture/preview">View details »</a></p>
+       </div>
+
       </div>
 
 

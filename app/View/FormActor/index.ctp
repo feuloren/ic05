@@ -2,16 +2,14 @@
 <div class="container">
    <form class="form-horizontal" name="x" action="<?php echo $this->Html->url(array("controller"=>"formActor", "action"=>"save")); ?>" method="post" enctype="multipart/form-data">
         <fieldset>
-            <legend>Complete the following form to add information in the graph</legend>
+            <h3>To add information about an actor</h3>
             
             <blockquote>
-                <p>With this form you can add an actor
+                <p>Fill the form!
                 </p>
             </blockquote>
             
-            
-            <!-- ACTORS  -->
-            <h2> Actor </h2>
+
             
             <div class="control-group">
                 <label class="control-label" for="input01">Last name</label>
@@ -90,7 +88,7 @@
 </div> 
     
     <!-- BUTTONS AT THE BOTTOM  -->
-            <div align="center" class="form-actions">
+            <div align="center">
                 <button align="center" type="submit" class="btn btn-primary">Save changes</button>
                 <button align="center" class="btn">Cancel</button>    
         </fieldset>
